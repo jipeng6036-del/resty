@@ -22,7 +22,7 @@ The regressions use the actual public Resty client with loopback HTTP servers, c
 - Linux configured CI starting with Go1.27.3 and Go1.23.12: each1,113 tests passed, race/shuffle/atomic coverage enabled. gotestsum1.13.0 requires Go>=1.24, so its nominal1.23 run selected Go1.26.10; a separate `GOTOOLCHAIN=local` actualGo1.23.12 full suite also passed1,113 tests.
 - Formatting, vet and build passed. Changed production statement coverage:54/54,63/63,63/63 across the three profiles (see raw block mapping).
 - Actual external HTTP modules:16 business cases per actualGo1.27.3/1.23.12, including closed transport failures, ignored probe errors, stale request ownership, ordinary custom breakers and embedded wrappers.
-- The four wrapper admission cases pass on the original patch and final candidate and specifically fail on the intermediate v3 implementation. The intermediate implementation was never submitted upstream.
+- The four wrapper admission cases pass on the original patch and final candidate and specifically fail on the intermediate v3 implementation. The intermediate v3 tree was not submitted as a PR head; the PR head includes the wrapper correction.
 - Ignored-error probe recovery applies to concrete built-in Count/Ratio breakers registered directly. Custom/embedded wrappers retain their public `Allow` behavior; their ignored-error half-open recovery is not newly guaranteed.
 - Local verification only. Upstream CI/approval, Windows/macOS behavior, Codecov upload, Plumber and any real external service are not claimed as passed.
 
