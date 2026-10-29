@@ -195,3 +195,72 @@ func TestExternalCircuitBreakerAdmission(t *testing.T) {
 		})
 	}
 }
+
+type embeddedCountCircuitBreaker struct {
+	*resty.CircuitBreakerCount
+	err        error
+	allowCalls int
+}
+
+func (cb *embeddedCountCircuitBreaker) Allow() error {
+	cb.allowCalls++
+	return cb.err
+}
+
+type embeddedRatioCircuitBreaker struct {
+	*resty.CircuitBreakerRatio
+	err        error
+	allowCalls int
+}
+
+func (cb *embeddedRatioCircuitBreaker) Allow() error {
+	cb.allowCalls++
+	return cb.err
+}
+
+func TestEmbeddedCircuitBreakerAdmission(t *testing.T) {
+	for _, mode := range []string{"count", "ratio"} {
+		for _, rejected := range []bool{false, true} {
+			t.Run(mode+"/"+map[bool]string{false: "allowed", true: "rejected"}[rejected], func(t *testing.T) {
+				var requests atomic.Int32
+				server := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) {
+					requests.Add(1)
+					w.WriteHeader(http.StatusOK)
+				}))
+				defer server.Close()
+				var admissionError error
+				if rejected {
+					admissionError = resty.ErrCircuitBreakerOpen
+				}
+				var breaker resty.CircuitBreaker
+				var allowCalls *int
+				if mode == "count" {
+					cb := &embeddedCountCircuitBreaker{
+						CircuitBreakerCount: resty.NewCircuitBreakerCount(1, 1, time.Second),
+						err:                 admissionError,
+					}
+					breaker, allowCalls = cb, &cb.allowCalls
+				} else {
+					cb := &embeddedRatioCircuitBreaker{
+						CircuitBreakerRatio: resty.NewCircuitBreakerRatio(0.5, 1, time.Second),
+						err:                 admissionError,
+					}
+					breaker, allowCalls = cb, &cb.allowCalls
+				}
+				client := resty.New().SetCircuitBreaker(breaker)
+				defer client.Close()
+				response, err := client.R().Get(server.URL)
+				if *allowCalls != 1 {
+					t.Fatalf("embedded breaker Allow called %d times, want 1", *allowCalls)
+				}
+				if rejected {
+					if !errors.Is(err, resty.ErrCircuitBreakerOpen) || requests.Load() != 0 {
+						t.Fatalf("embedded breaker rejection not preserved: err=%v requests=%d", err, requests.Load())
+					}
+				} else if err != nil || response.StatusCode() != http.StatusOK || requests.Load() != 1 {
+					t.Fatalf("embedded breaker admission not preserved: err=%v requests=%d", err, requests.Load())
+				}
+			})
+		}
+	}
+}

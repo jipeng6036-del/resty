@@ -2518,9 +2518,12 @@ func (c *Client) execute(req *Request) (*Response, error) {
 	var probe *circuitBreakerProbe
 	if circuitBreaker != nil {
 		var err error
-		if cbp, ok := circuitBreaker.(cbProbeAdmitter); ok {
-			probe, err = cbp.allowWithProbe()
-		} else {
+		switch cb := circuitBreaker.(type) {
+		case *CircuitBreakerCount:
+			probe, err = cb.allowWithProbe()
+		case *CircuitBreakerRatio:
+			probe, err = cb.allowWithProbe()
+		default:
 			err = circuitBreaker.Allow()
 		}
 		if err != nil {

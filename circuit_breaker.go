@@ -270,10 +270,6 @@ type cbTransportErrorObserver interface {
 // A probe has a non-zero size so simultaneously live leases have distinct identities.
 type circuitBreakerProbe byte
 
-type cbProbeAdmitter interface {
-	allowWithProbe() (*circuitBreakerProbe, error)
-}
-
 // CircuitBreakerErrorPolicy is a function that inspects the error of a request that
 // failed without an HTTP response (dial error, TLS error, timeout, ...) and returns
 // true when it should be counted as a failure and potentially trip the circuit breaker.
