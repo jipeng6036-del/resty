@@ -1,0 +1,42 @@
+{
+  "completedAtUtc": "2026-10-29T12:11:54.101420+00:00",
+  "sourceFiles": 61,
+  "exactSourceBindings": {
+    "boundAtUtc": "2026-10-29T12:07:49.645155+00:00",
+    "archiveInput": "ci-evidence/run0948-20261029-root/resty-v4/candidate-v4-source.tar",
+    "manifestInput": "ci-evidence/run0948-20261029-root/resty-v4/candidate-v4-source-manifest.json",
+    "archiveSha256": "23dda4ad690265e53c45a9e99392f2a4fe4b491a970e69028012a0273cc501ba",
+    "manifestSha256": "0df2731b7b1986028b51da5622dfc0ae890ed86b045b567d5ee9991779889299",
+    "files": 61,
+    "hostSourceWrites": false,
+    "container": "ghpr-next-go-resty-20261029",
+    "containerSource": "/work/candidate-v4",
+    "previousEvidenceUnmodified": true
+  },
+  "requiredSteps": [
+    "v4-1.27.3-environment",
+    "v4-1.27.3-format",
+    "v4-1.27.3-full-ci",
+    "v4-1.27.3-vet",
+    "v4-1.27.3-build",
+    "v4-1.23.12-environment",
+    "v4-1.23.12-format",
+    "v4-1.23.12-full-ci",
+    "v4-1.23.12-vet",
+    "v4-1.23.12-build",
+    "v4-1.23.12-local-full",
+    "public-v4-1.27.3",
+    "public-v4-1.23.12",
+    "public-closed-v4-1.27.3",
+    "public-closed-v4-1.23.12",
+    "source-final-hashes",
+    "frozen-source-git-diff-check-standard",
+    "negative-control-source-original",
+    "negative-control-source-candidate-v3"
+  ],
+  "allRequiredExitZero": true,
+  "changedProductionCoverage100Percent": true,
+  "archiveExportVerified": true,
+  "hostSourceEdited": false,
+  "previousFrozenEvidenceWritten": false
+}

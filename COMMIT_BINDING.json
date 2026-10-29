@@ -1,0 +1,20 @@
+{
+  "atUtc": "2026-10-29T12:13:48.594500+00:00",
+  "status": "NORMAL_COMMIT_ALL61_V4_TESTED_BLOBS_AND_MODES_BOUND",
+  "base": "78dfc5c1dff969d4d30313f7fde8b0987c681135",
+  "parent": "2c8cf70417103922e279b430406771c2a9abc44f",
+  "head": "130cd1a8819ff2e9fa9dc2cec2f417aad028b133",
+  "tree": "e9c8535ae6418ec7e9df5b054c2cc4618b46b217",
+  "branch": "fix/circuit-breaker-ignored-probe",
+  "sourceArchiveSHA256": "23dda4ad690265e53c45a9e99392f2a4fe4b491a970e69028012a0273cc501ba",
+  "files": 61,
+  "validation": "run-next-resty-v4-validation-20261029/DELIVERY.json",
+  "independent": "run-next-resty-independent-review-20261029/v4-review/DELIVERY.json",
+  "normalCommitNoHookBypass": true,
+  "retainedOriginalCommits": [
+    "8a8eb2b59cab7afd7ed2cb5275d2e7a5e27c2fec",
+    "83385798c01938c154cd1a88904e2a491ceb0f13"
+  ],
+  "clean": true,
+  "publicWrites": 0
+}

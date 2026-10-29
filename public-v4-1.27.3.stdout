@@ -1,0 +1,48 @@
+runtimeproof
+golang.org/x/crypto v0.41.0
+golang.org/x/net v0.43.0
+golang.org/x/sys v0.35.0
+golang.org/x/term v0.34.0
+golang.org/x/text v0.28.0
+resty.dev/v3 v3.0.0-rc.4 => /work/candidate-v4
+=== RUN   TestIgnoredStaleAttemptCannotReleaseCurrentProbe
+=== RUN   TestIgnoredStaleAttemptCannotReleaseCurrentProbe/count/closed
+=== RUN   TestIgnoredStaleAttemptCannotReleaseCurrentProbe/count/previous_half-open
+=== RUN   TestIgnoredStaleAttemptCannotReleaseCurrentProbe/ratio/closed
+=== RUN   TestIgnoredStaleAttemptCannotReleaseCurrentProbe/ratio/previous_half-open
+--- PASS: TestIgnoredStaleAttemptCannotReleaseCurrentProbe (0.13s)
+    --- PASS: TestIgnoredStaleAttemptCannotReleaseCurrentProbe/count/closed (0.02s)
+    --- PASS: TestIgnoredStaleAttemptCannotReleaseCurrentProbe/count/previous_half-open (0.04s)
+    --- PASS: TestIgnoredStaleAttemptCannotReleaseCurrentProbe/ratio/closed (0.02s)
+    --- PASS: TestIgnoredStaleAttemptCannotReleaseCurrentProbe/ratio/previous_half-open (0.04s)
+=== RUN   TestExternalCircuitBreakerAdmission
+=== RUN   TestExternalCircuitBreakerAdmission/allowed
+=== RUN   TestExternalCircuitBreakerAdmission/rejected
+--- PASS: TestExternalCircuitBreakerAdmission (0.00s)
+    --- PASS: TestExternalCircuitBreakerAdmission/allowed (0.00s)
+    --- PASS: TestExternalCircuitBreakerAdmission/rejected (0.00s)
+=== RUN   TestEmbeddedCircuitBreakerAdmission
+=== RUN   TestEmbeddedCircuitBreakerAdmission/count/allowed
+=== RUN   TestEmbeddedCircuitBreakerAdmission/count/rejected
+=== RUN   TestEmbeddedCircuitBreakerAdmission/ratio/allowed
+=== RUN   TestEmbeddedCircuitBreakerAdmission/ratio/rejected
+--- PASS: TestEmbeddedCircuitBreakerAdmission (0.00s)
+    --- PASS: TestEmbeddedCircuitBreakerAdmission/count/allowed (0.00s)
+    --- PASS: TestEmbeddedCircuitBreakerAdmission/count/rejected (0.00s)
+    --- PASS: TestEmbeddedCircuitBreakerAdmission/ratio/allowed (0.00s)
+    --- PASS: TestEmbeddedCircuitBreakerAdmission/ratio/rejected (0.00s)
+=== RUN   TestCircuitBreakerIgnoredHalfOpenProbe
+=== RUN   TestCircuitBreakerIgnoredHalfOpenProbe/count/cancellation
+=== RUN   TestCircuitBreakerIgnoredHalfOpenProbe/count/custom_EOF_policy
+=== RUN   TestCircuitBreakerIgnoredHalfOpenProbe/ratio/cancellation
+=== RUN   TestCircuitBreakerIgnoredHalfOpenProbe/ratio/custom_EOF_policy
+--- PASS: TestCircuitBreakerIgnoredHalfOpenProbe (0.21s)
+    --- PASS: TestCircuitBreakerIgnoredHalfOpenProbe/count/cancellation (0.05s)
+    --- PASS: TestCircuitBreakerIgnoredHalfOpenProbe/count/custom_EOF_policy (0.05s)
+    --- PASS: TestCircuitBreakerIgnoredHalfOpenProbe/ratio/cancellation (0.05s)
+    --- PASS: TestCircuitBreakerIgnoredHalfOpenProbe/ratio/custom_EOF_policy (0.05s)
+=== RUN   TestRuntimeVersion
+    runtime_test.go:3: go1.27.3
+--- PASS: TestRuntimeVersion (0.00s)
+PASS
+ok  	runtimeproof	1.361s

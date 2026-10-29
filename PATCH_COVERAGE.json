@@ -1,0 +1,1002 @@
+{
+  "exactBase": "78dfc5c1dff969d4d30313f7fde8b0987c681135",
+  "method": "Go coverage blocks intersecting added/replaced production source lines, including moved code, against exact archived baseline.",
+  "changedLines": [
+    {
+      "file": "circuit_breaker.go",
+      "addedLineNumbers": [
+        9,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        331,
+        337,
+        381,
+        394,
+        395,
+        396,
+        397,
+        398,
+        401,
+        403,
+        404,
+        405,
+        407,
+        410,
+        425,
+        429,
+        436,
+        440,
+        441,
+        442,
+        443,
+        444,
+        445,
+        446,
+        447,
+        448,
+        449,
+        450,
+        451,
+        452,
+        453,
+        454,
+        455,
+        507,
+        508,
+        509,
+        510,
+        511,
+        512,
+        513,
+        556,
+        565
+      ]
+    },
+    {
+      "file": "client.go",
+      "addedLineNumbers": [
+        2518,
+        2520,
+        2521,
+        2522,
+        2523,
+        2524,
+        2525,
+        2526,
+        2527,
+        2528,
+        2529,
+        2569,
+        2570,
+        2571
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "profile": "ci-1.27.3-coverage.txt",
+      "sha256": "8fee5126eb7148abbea019369e54fe7b96d66b270d7aa300436e91c8dba04164",
+      "coveredTotal": 3428,
+      "statementsTotal": 3434,
+      "changedCovered": 54,
+      "changedTotal": 54,
+      "missingChangedBlocks": [],
+      "changedBlocks": [
+        {
+          "file": "circuit_breaker.go",
+          "start": 283,
+          "end": 284,
+          "statements": 1,
+          "hits": 18
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 293,
+          "end": 295,
+          "statements": 2,
+          "hits": 5
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 304,
+          "end": 306,
+          "statements": 2,
+          "hits": 5
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 309,
+          "end": 309,
+          "statements": 1,
+          "hits": 13
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 310,
+          "end": 311,
+          "statements": 1,
+          "hits": 3
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 311,
+          "end": 311,
+          "statements": 1,
+          "hits": 10
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 312,
+          "end": 313,
+          "statements": 1,
+          "hits": 3
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 317,
+          "end": 317,
+          "statements": 1,
+          "hits": 12
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 318,
+          "end": 319,
+          "statements": 1,
+          "hits": 4
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 319,
+          "end": 319,
+          "statements": 1,
+          "hits": 8
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 320,
+          "end": 321,
+          "statements": 1,
+          "hits": 3
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 378,
+          "end": 382,
+          "statements": 1,
+          "hits": 4023
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 394,
+          "end": 396,
+          "statements": 2,
+          "hits": 16
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 401,
+          "end": 401,
+          "statements": 1,
+          "hits": 14
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 403,
+          "end": 404,
+          "statements": 2,
+          "hits": 28
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 405,
+          "end": 406,
+          "statements": 1,
+          "hits": 7
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 407,
+          "end": 407,
+          "statements": 1,
+          "hits": 21
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 410,
+          "end": 410,
+          "statements": 1,
+          "hits": 52
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 425,
+          "end": 427,
+          "statements": 2,
+          "hits": 27
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 429,
+          "end": 431,
+          "statements": 2,
+          "hits": 29
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 436,
+          "end": 437,
+          "statements": 2,
+          "hits": 14
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 446,
+          "end": 447,
+          "statements": 1,
+          "hits": 34
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 448,
+          "end": 448,
+          "statements": 1,
+          "hits": 34
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 450,
+          "end": 450,
+          "statements": 1,
+          "hits": 30
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 451,
+          "end": 452,
+          "statements": 1,
+          "hits": 19
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 454,
+          "end": 455,
+          "statements": 2,
+          "hits": 4
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 508,
+          "end": 508,
+          "statements": 1,
+          "hits": 10
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 509,
+          "end": 510,
+          "statements": 1,
+          "hits": 4
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 511,
+          "end": 511,
+          "statements": 1,
+          "hits": 10
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 554,
+          "end": 558,
+          "statements": 5,
+          "hits": 67
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 565,
+          "end": 567,
+          "statements": 2,
+          "hits": 2
+        },
+        {
+          "file": "client.go",
+          "start": 2518,
+          "end": 2519,
+          "statements": 2,
+          "hits": 9825
+        },
+        {
+          "file": "client.go",
+          "start": 2520,
+          "end": 2521,
+          "statements": 2,
+          "hits": 84
+        },
+        {
+          "file": "client.go",
+          "start": 2523,
+          "end": 2523,
+          "statements": 1,
+          "hits": 49
+        },
+        {
+          "file": "client.go",
+          "start": 2525,
+          "end": 2525,
+          "statements": 1,
+          "hits": 29
+        },
+        {
+          "file": "client.go",
+          "start": 2527,
+          "end": 2527,
+          "statements": 1,
+          "hits": 6
+        },
+        {
+          "file": "client.go",
+          "start": 2529,
+          "end": 2529,
+          "statements": 1,
+          "hits": 84
+        },
+        {
+          "file": "client.go",
+          "start": 2569,
+          "end": 2569,
+          "statements": 1,
+          "hits": 101
+        },
+        {
+          "file": "client.go",
+          "start": 2570,
+          "end": 2571,
+          "statements": 1,
+          "hits": 25
+        }
+      ]
+    },
+    {
+      "profile": "ci-1.23.12-coverage.txt",
+      "sha256": "344a3a8f57e8a78aab411c306858b5ec269305312bf296b88ad84db28aca89ab",
+      "coveredTotal": 3428,
+      "statementsTotal": 3434,
+      "changedCovered": 63,
+      "changedTotal": 63,
+      "missingChangedBlocks": [],
+      "changedBlocks": [
+        {
+          "file": "circuit_breaker.go",
+          "start": 282,
+          "end": 284,
+          "statements": 1,
+          "hits": 18
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 292,
+          "end": 295,
+          "statements": 2,
+          "hits": 5
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 303,
+          "end": 306,
+          "statements": 2,
+          "hits": 5
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 308,
+          "end": 309,
+          "statements": 1,
+          "hits": 13
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 309,
+          "end": 311,
+          "statements": 1,
+          "hits": 3
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 311,
+          "end": 311,
+          "statements": 1,
+          "hits": 10
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 311,
+          "end": 313,
+          "statements": 1,
+          "hits": 3
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 316,
+          "end": 317,
+          "statements": 1,
+          "hits": 12
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 317,
+          "end": 319,
+          "statements": 1,
+          "hits": 4
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 319,
+          "end": 319,
+          "statements": 1,
+          "hits": 8
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 319,
+          "end": 321,
+          "statements": 1,
+          "hits": 3
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 377,
+          "end": 385,
+          "statements": 4,
+          "hits": 3462
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 393,
+          "end": 396,
+          "statements": 2,
+          "hits": 16
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 398,
+          "end": 399,
+          "statements": 1,
+          "hits": 93
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 400,
+          "end": 401,
+          "statements": 1,
+          "hits": 14
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 402,
+          "end": 404,
+          "statements": 2,
+          "hits": 28
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 404,
+          "end": 406,
+          "statements": 1,
+          "hits": 7
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 407,
+          "end": 407,
+          "statements": 1,
+          "hits": 21
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 410,
+          "end": 410,
+          "statements": 1,
+          "hits": 51
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 424,
+          "end": 427,
+          "statements": 2,
+          "hits": 27
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 429,
+          "end": 432,
+          "statements": 3,
+          "hits": 28
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 435,
+          "end": 437,
+          "statements": 2,
+          "hits": 14
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 445,
+          "end": 448,
+          "statements": 2,
+          "hits": 34
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 449,
+          "end": 450,
+          "statements": 1,
+          "hits": 30
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 450,
+          "end": 452,
+          "statements": 1,
+          "hits": 19
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 453,
+          "end": 455,
+          "statements": 2,
+          "hits": 4
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 507,
+          "end": 508,
+          "statements": 1,
+          "hits": 10
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 508,
+          "end": 510,
+          "statements": 1,
+          "hits": 4
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 511,
+          "end": 511,
+          "statements": 1,
+          "hits": 10
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 553,
+          "end": 558,
+          "statements": 5,
+          "hits": 67
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 564,
+          "end": 567,
+          "statements": 2,
+          "hits": 2
+        },
+        {
+          "file": "client.go",
+          "start": 2514,
+          "end": 2519,
+          "statements": 5,
+          "hits": 9825
+        },
+        {
+          "file": "client.go",
+          "start": 2519,
+          "end": 2521,
+          "statements": 2,
+          "hits": 83
+        },
+        {
+          "file": "client.go",
+          "start": 2522,
+          "end": 2523,
+          "statements": 1,
+          "hits": 48
+        },
+        {
+          "file": "client.go",
+          "start": 2524,
+          "end": 2525,
+          "statements": 1,
+          "hits": 29
+        },
+        {
+          "file": "client.go",
+          "start": 2526,
+          "end": 2527,
+          "statements": 1,
+          "hits": 6
+        },
+        {
+          "file": "client.go",
+          "start": 2529,
+          "end": 2529,
+          "statements": 1,
+          "hits": 83
+        },
+        {
+          "file": "client.go",
+          "start": 2529,
+          "end": 2530,
+          "statements": 1,
+          "hits": 14
+        },
+        {
+          "file": "client.go",
+          "start": 2568,
+          "end": 2569,
+          "statements": 1,
+          "hits": 101
+        },
+        {
+          "file": "client.go",
+          "start": 2569,
+          "end": 2571,
+          "statements": 1,
+          "hits": 25
+        }
+      ]
+    },
+    {
+      "profile": "local-1.23.12-coverage.txt",
+      "sha256": "0a1bb835cd2228d07995163de8dd3cebdad3cd4f85534afbb8406c3a8951768f",
+      "coveredTotal": 3428,
+      "statementsTotal": 3434,
+      "changedCovered": 63,
+      "changedTotal": 63,
+      "missingChangedBlocks": [],
+      "changedBlocks": [
+        {
+          "file": "circuit_breaker.go",
+          "start": 282,
+          "end": 284,
+          "statements": 1,
+          "hits": 18
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 292,
+          "end": 295,
+          "statements": 2,
+          "hits": 5
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 303,
+          "end": 306,
+          "statements": 2,
+          "hits": 5
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 308,
+          "end": 309,
+          "statements": 1,
+          "hits": 13
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 309,
+          "end": 311,
+          "statements": 1,
+          "hits": 3
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 311,
+          "end": 311,
+          "statements": 1,
+          "hits": 10
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 311,
+          "end": 313,
+          "statements": 1,
+          "hits": 3
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 316,
+          "end": 317,
+          "statements": 1,
+          "hits": 12
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 317,
+          "end": 319,
+          "statements": 1,
+          "hits": 4
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 319,
+          "end": 319,
+          "statements": 1,
+          "hits": 8
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 319,
+          "end": 321,
+          "statements": 1,
+          "hits": 3
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 377,
+          "end": 385,
+          "statements": 4,
+          "hits": 3130
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 393,
+          "end": 396,
+          "statements": 2,
+          "hits": 16
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 398,
+          "end": 399,
+          "statements": 1,
+          "hits": 94
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 400,
+          "end": 401,
+          "statements": 1,
+          "hits": 14
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 402,
+          "end": 404,
+          "statements": 2,
+          "hits": 28
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 404,
+          "end": 406,
+          "statements": 1,
+          "hits": 7
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 407,
+          "end": 407,
+          "statements": 1,
+          "hits": 21
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 410,
+          "end": 410,
+          "statements": 1,
+          "hits": 52
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 424,
+          "end": 427,
+          "statements": 2,
+          "hits": 27
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 429,
+          "end": 432,
+          "statements": 3,
+          "hits": 29
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 435,
+          "end": 437,
+          "statements": 2,
+          "hits": 14
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 445,
+          "end": 448,
+          "statements": 2,
+          "hits": 34
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 449,
+          "end": 450,
+          "statements": 1,
+          "hits": 30
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 450,
+          "end": 452,
+          "statements": 1,
+          "hits": 19
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 453,
+          "end": 455,
+          "statements": 2,
+          "hits": 4
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 507,
+          "end": 508,
+          "statements": 1,
+          "hits": 10
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 508,
+          "end": 510,
+          "statements": 1,
+          "hits": 4
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 511,
+          "end": 511,
+          "statements": 1,
+          "hits": 10
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 553,
+          "end": 558,
+          "statements": 5,
+          "hits": 67
+        },
+        {
+          "file": "circuit_breaker.go",
+          "start": 564,
+          "end": 567,
+          "statements": 2,
+          "hits": 2
+        },
+        {
+          "file": "client.go",
+          "start": 2514,
+          "end": 2519,
+          "statements": 5,
+          "hits": 9825
+        },
+        {
+          "file": "client.go",
+          "start": 2519,
+          "end": 2521,
+          "statements": 2,
+          "hits": 84
+        },
+        {
+          "file": "client.go",
+          "start": 2522,
+          "end": 2523,
+          "statements": 1,
+          "hits": 49
+        },
+        {
+          "file": "client.go",
+          "start": 2524,
+          "end": 2525,
+          "statements": 1,
+          "hits": 29
+        },
+        {
+          "file": "client.go",
+          "start": 2526,
+          "end": 2527,
+          "statements": 1,
+          "hits": 6
+        },
+        {
+          "file": "client.go",
+          "start": 2529,
+          "end": 2529,
+          "statements": 1,
+          "hits": 84
+        },
+        {
+          "file": "client.go",
+          "start": 2529,
+          "end": 2530,
+          "statements": 1,
+          "hits": 14
+        },
+        {
+          "file": "client.go",
+          "start": 2568,
+          "end": 2569,
+          "statements": 1,
+          "hits": 101
+        },
+        {
+          "file": "client.go",
+          "start": 2569,
+          "end": 2571,
+          "statements": 1,
+          "hits": 25
+        }
+      ]
+    }
+  ]
+}

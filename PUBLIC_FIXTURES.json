@@ -1,0 +1,17 @@
+{
+  "sourceArchiveSha256": "23dda4ad690265e53c45a9e99392f2a4fe4b491a970e69028012a0273cc501ba",
+  "fixtures": [
+    {
+      "file": "circuit_breaker_ownership_test.go",
+      "bytes": 8553,
+      "executedSha256": "f4320b1f65d1b5af1fa456fd66485bcb1e1845a87b2425073e0f0b30b6ec9f2a"
+    },
+    {
+      "file": "circuit_breaker_probe_test.go",
+      "bytes": 4481,
+      "executedSha256": "9f6e3330993c6c75ab60e6eef8a2f4c635fb200c5d188ace616bdfb359593134"
+    }
+  ],
+  "transformation": "Only package resty_test renamed to runtimeproof_test; imports and all actual HTTP/SDK assertions preserved.",
+  "moduleReplace": "/work/candidate-v4"
+}

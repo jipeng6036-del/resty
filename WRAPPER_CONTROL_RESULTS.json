@@ -1,0 +1,156 @@
+{
+  "frozenV4ArchiveSha256": "23dda4ad690265e53c45a9e99392f2a4fe4b491a970e69028012a0273cc501ba",
+  "scope": "Same exact external-package real loopback HTTP wrapper Allow fixture across original1262, frozenv3 and frozenv4. Only four new wrapper cases executed.",
+  "cases": [
+    {
+      "stage": "original",
+      "actualGo": "1.27.3",
+      "fixtureSha256": "f4320b1f65d1b5af1fa456fd66485bcb1e1845a87b2425073e0f0b30b6ec9f2a",
+      "result": "PASS",
+      "leaves": [
+        [
+          "PASS",
+          "count/allowed"
+        ],
+        [
+          "PASS",
+          "count/rejected"
+        ],
+        [
+          "PASS",
+          "ratio/allowed"
+        ],
+        [
+          "PASS",
+          "ratio/rejected"
+        ]
+      ],
+      "log": "wrapper-control-original-1.27.3.stdout"
+    },
+    {
+      "stage": "original",
+      "actualGo": "1.23.12",
+      "fixtureSha256": "f4320b1f65d1b5af1fa456fd66485bcb1e1845a87b2425073e0f0b30b6ec9f2a",
+      "result": "PASS",
+      "leaves": [
+        [
+          "PASS",
+          "count/allowed"
+        ],
+        [
+          "PASS",
+          "count/rejected"
+        ],
+        [
+          "PASS",
+          "ratio/allowed"
+        ],
+        [
+          "PASS",
+          "ratio/rejected"
+        ]
+      ],
+      "log": "wrapper-control-original-1.23.12.stdout"
+    },
+    {
+      "stage": "candidate-v3",
+      "actualGo": "1.27.3",
+      "fixtureSha256": "f4320b1f65d1b5af1fa456fd66485bcb1e1845a87b2425073e0f0b30b6ec9f2a",
+      "result": "EXPECTED_FAIL",
+      "leaves": [
+        [
+          "FAIL",
+          "count/allowed"
+        ],
+        [
+          "FAIL",
+          "count/rejected"
+        ],
+        [
+          "FAIL",
+          "ratio/allowed"
+        ],
+        [
+          "FAIL",
+          "ratio/rejected"
+        ]
+      ],
+      "log": "wrapper-control-candidate-v3-1.27.3.stdout"
+    },
+    {
+      "stage": "candidate-v3",
+      "actualGo": "1.23.12",
+      "fixtureSha256": "f4320b1f65d1b5af1fa456fd66485bcb1e1845a87b2425073e0f0b30b6ec9f2a",
+      "result": "EXPECTED_FAIL",
+      "leaves": [
+        [
+          "FAIL",
+          "count/allowed"
+        ],
+        [
+          "FAIL",
+          "count/rejected"
+        ],
+        [
+          "FAIL",
+          "ratio/allowed"
+        ],
+        [
+          "FAIL",
+          "ratio/rejected"
+        ]
+      ],
+      "log": "wrapper-control-candidate-v3-1.23.12.stdout"
+    },
+    {
+      "stage": "candidate-v4",
+      "actualGo": "1.27.3",
+      "fixtureSha256": "f4320b1f65d1b5af1fa456fd66485bcb1e1845a87b2425073e0f0b30b6ec9f2a",
+      "result": "PASS",
+      "leaves": [
+        [
+          "PASS",
+          "count/allowed"
+        ],
+        [
+          "PASS",
+          "count/rejected"
+        ],
+        [
+          "PASS",
+          "ratio/allowed"
+        ],
+        [
+          "PASS",
+          "ratio/rejected"
+        ]
+      ],
+      "log": "wrapper-control-candidate-v4-1.27.3.stdout"
+    },
+    {
+      "stage": "candidate-v4",
+      "actualGo": "1.23.12",
+      "fixtureSha256": "f4320b1f65d1b5af1fa456fd66485bcb1e1845a87b2425073e0f0b30b6ec9f2a",
+      "result": "PASS",
+      "leaves": [
+        [
+          "PASS",
+          "count/allowed"
+        ],
+        [
+          "PASS",
+          "count/rejected"
+        ],
+        [
+          "PASS",
+          "ratio/allowed"
+        ],
+        [
+          "PASS",
+          "ratio/rejected"
+        ]
+      ],
+      "log": "wrapper-control-candidate-v4-1.23.12.stdout"
+    }
+  ]
+}

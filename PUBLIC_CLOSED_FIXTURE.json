@@ -1,0 +1,6 @@
+{
+  "source": "Unchanged closed-state public HTTP proof from frozen original lane, executed newly against final v4 source.",
+  "fixtureSha256": "e2428276fb055f1119b828430772a2c76ee6843743882479cb11629b01b70f3e",
+  "candidateSourceSha256": "23dda4ad690265e53c45a9e99392f2a4fe4b491a970e69028012a0273cc501ba",
+  "moduleReplace": "/work/candidate-v4"
+}

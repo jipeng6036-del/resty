@@ -1,0 +1,19 @@
+go version go1.23.12 linux/amd64
+auto
+https://proxy.golang.org
+sum.golang.org
+resty.dev/v3
+golang.org/x/crypto v0.41.0
+golang.org/x/net v0.43.0
+golang.org/x/sys v0.35.0
+golang.org/x/term v0.34.0
+golang.org/x/text v0.28.0
+{
+	"Path": "gotest.tools/gotestsum",
+	"Version": "v1.13.0",
+	"Query": "latest",
+	"Time": "2025-09-11T03:13:16Z",
+	"Dir": "/work/gopath/pkg/mod/gotest.tools/gotestsum@v1.13.0",
+	"GoMod": "/work/gopath/pkg/mod/cache/download/gotest.tools/gotestsum/@v/v1.13.0.mod",
+	"GoVersion": "1.24.0"
+}

@@ -1,0 +1,146 @@
+{
+  "status": "PASS_LINUX_FINAL_V4_AWAITING_ROOT_REVIEW_AND_PUBLICATION",
+  "completedAtUtc": "2026-10-29T12:12:01.935728+00:00",
+  "source": {
+    "files": 61,
+    "archiveInput": "ci-evidence/run0948-20261029-root/resty-v4/candidate-v4-source.tar",
+    "manifestInput": "ci-evidence/run0948-20261029-root/resty-v4/candidate-v4-source-manifest.json",
+    "rawArchiveSha256": "23dda4ad690265e53c45a9e99392f2a4fe4b491a970e69028012a0273cc501ba",
+    "manifestSha256": "0df2731b7b1986028b51da5622dfc0ae890ed86b045b567d5ee9991779889299",
+    "containerPath": "/work/candidate-v4",
+    "parent": "2c8cf70417103922e279b430406771c2a9abc44f",
+    "commitClaim": "No final Git commit binding claimed; root owns host product and final commits."
+  },
+  "fullTests": {
+    "configuredCIStartingGo1.27.3": 1113,
+    "configuredCIStartingGo1.23.12": 1113,
+    "forcedLocalGo1.23.12": 1113
+  },
+  "requiredGates": "Both exact configured CI commands with gotestsum latest/race/count1/atomic coverage/coverpkg/shuffle, actual forced-local Go1.23.12 full suite, formatting/vet/build, standard git diff --check of exact archived source, final source hashes and modes all PASS.",
+  "toolchainBoundary": "Configured starting Go1.23.12 CI auto-selects Go1.26.10 for gotestsum1.13.0 (requires Go>=1.24). Forced-local Go1.23.12 full suite and both external SDK modules run using actual Go1.23.12. Official Go1.27.3/1.23.12 tarball/hash evidence reused unchanged from prior frozen lane.",
+  "patchCoverage": {
+    "method": "Go coverage blocks intersecting added/replaced production source lines, including moved code, against exact archived baseline.",
+    "profiles": [
+      {
+        "file": "ci-1.27.3-coverage.txt",
+        "changedCovered": 54,
+        "changedTotal": 54,
+        "coveredTotal": 3428,
+        "statementsTotal": 3434
+      },
+      {
+        "file": "ci-1.23.12-coverage.txt",
+        "changedCovered": 63,
+        "changedTotal": 63,
+        "coveredTotal": 3428,
+        "statementsTotal": 3434
+      },
+      {
+        "file": "local-1.23.12-coverage.txt",
+        "changedCovered": 63,
+        "changedTotal": 63,
+        "coveredTotal": 3428,
+        "statementsTotal": 3434
+      }
+    ]
+  },
+  "publicSDK": {
+    "result": "PASS",
+    "actualVersions": [
+      "1.27.3",
+      "1.23.12"
+    ],
+    "leafScenariosPerVersion": 16,
+    "sourceFixtureLeaves": 14,
+    "closedFixtureLeaves": 2,
+    "groups": "Ignored half-open cancellation/custom EOF4, stale closed/old-generation ownership4, external custom admission2, embedded Count/Ratio wrapper admission4, closed real transport timeout tripping2. All use real loopback HTTP. Runtime sanity logs are separate.",
+    "executed": [
+      {
+        "log": "public-v4-1.27.3.stdout",
+        "actualGo": "1.27.3",
+        "leafScenarios": 14,
+        "leaves": [
+          "TestIgnoredStaleAttemptCannotReleaseCurrentProbe/count/closed",
+          "TestIgnoredStaleAttemptCannotReleaseCurrentProbe/count/previous_half-open",
+          "TestIgnoredStaleAttemptCannotReleaseCurrentProbe/ratio/closed",
+          "TestIgnoredStaleAttemptCannotReleaseCurrentProbe/ratio/previous_half-open",
+          "TestExternalCircuitBreakerAdmission/allowed",
+          "TestExternalCircuitBreakerAdmission/rejected",
+          "TestEmbeddedCircuitBreakerAdmission/count/allowed",
+          "TestEmbeddedCircuitBreakerAdmission/count/rejected",
+          "TestEmbeddedCircuitBreakerAdmission/ratio/allowed",
+          "TestEmbeddedCircuitBreakerAdmission/ratio/rejected",
+          "TestCircuitBreakerIgnoredHalfOpenProbe/count/cancellation",
+          "TestCircuitBreakerIgnoredHalfOpenProbe/count/custom_EOF_policy",
+          "TestCircuitBreakerIgnoredHalfOpenProbe/ratio/cancellation",
+          "TestCircuitBreakerIgnoredHalfOpenProbe/ratio/custom_EOF_policy"
+        ]
+      },
+      {
+        "log": "public-closed-v4-1.27.3.stdout",
+        "actualGo": "1.27.3",
+        "leafScenarios": 2,
+        "leaves": [
+          "TestPublicTransportFailuresTripCircuit/count",
+          "TestPublicTransportFailuresTripCircuit/ratio"
+        ]
+      },
+      {
+        "log": "public-v4-1.23.12.stdout",
+        "actualGo": "1.23.12",
+        "leafScenarios": 14,
+        "leaves": [
+          "TestIgnoredStaleAttemptCannotReleaseCurrentProbe/count/closed",
+          "TestIgnoredStaleAttemptCannotReleaseCurrentProbe/count/previous_half-open",
+          "TestIgnoredStaleAttemptCannotReleaseCurrentProbe/ratio/closed",
+          "TestIgnoredStaleAttemptCannotReleaseCurrentProbe/ratio/previous_half-open",
+          "TestExternalCircuitBreakerAdmission/allowed",
+          "TestExternalCircuitBreakerAdmission/rejected",
+          "TestEmbeddedCircuitBreakerAdmission/count/allowed",
+          "TestEmbeddedCircuitBreakerAdmission/count/rejected",
+          "TestEmbeddedCircuitBreakerAdmission/ratio/allowed",
+          "TestEmbeddedCircuitBreakerAdmission/ratio/rejected",
+          "TestCircuitBreakerIgnoredHalfOpenProbe/count/cancellation",
+          "TestCircuitBreakerIgnoredHalfOpenProbe/count/custom_EOF_policy",
+          "TestCircuitBreakerIgnoredHalfOpenProbe/ratio/cancellation",
+          "TestCircuitBreakerIgnoredHalfOpenProbe/ratio/custom_EOF_policy"
+        ]
+      },
+      {
+        "log": "public-closed-v4-1.23.12.stdout",
+        "actualGo": "1.23.12",
+        "leafScenarios": 2,
+        "leaves": [
+          "TestPublicTransportFailuresTripCircuit/count",
+          "TestPublicTransportFailuresTripCircuit/ratio"
+        ]
+      }
+    ],
+    "fixtures": [
+      "PUBLIC_FIXTURES.json",
+      "PUBLIC_CLOSED_FIXTURE.json"
+    ],
+    "wrapperNegativeControl": "WRAPPER_CONTROL_RESULTS.json: same four new wrapper cases PASS on original1262 and v4, four precise Allow-called0 FAIL on frozenv3; verified both actual Go versions.",
+    "previousControls": "Unchanged original/v2 recovery and stale ownership controls remain in prior frozen receipts; unrelated old full matrices were not repeated.",
+    "scopeBoundary": "No new claim of ignored-error half-open recovery for custom/embedded wrappers."
+  },
+  "execution": "EXECUTION.jsonl",
+  "integrity": {
+    "source": "VERIFICATION.json",
+    "previousFrozenEvidence": "PREVIOUS_EVIDENCE_INTEGRITY.json",
+    "previousMembers": 511,
+    "exportArchive": "executed-source-public-and-coverage.tar.gz",
+    "exportSha256": "65961409aa8cbf8368e1ee030718bcc866fd5ab20a6e9c2049cc9d17076e3c8f",
+    "exportMembers": 83,
+    "all61SourceBytesModesExact": true,
+    "hostProductSourceWrites": false,
+    "oldFrozenEvidenceWrites": false
+  },
+  "diagnosticAttempt": "An initial no-index diff-check returned1 for differing trees; raw logs retained. Repeated as standard git diff --check against an isolated baseline index including intent-to-add new files, exit0. No source change was needed.",
+  "limits": [
+    "Linux local results only; no Windows/macOS, hosted CI, Codecov or Plumber success claimed.",
+    "No host product edit, global ledger edit, GitHub request, network Git, commit, fork, push, PR, public comment, signing or paid service by this lane.",
+    "Root owns independent source review, final Git blob bindings, final remote checks and public delivery.",
+    "Owned container remains running; exact source, public modules, control modules and raw coverage are exported and verified."
+  ]
+}
